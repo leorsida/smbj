@@ -29,6 +29,7 @@ class NtlmFunctionsSpec extends Specification {
   static
   def providers = [new JceSecurityProvider(), new JceSecurityProvider(new BouncyCastleProvider()), new BCSecurityProvider()]
 
+  /*
   @Unroll
   def "should correctly determine LMOWFv1 LM hash"() {
     expect:
@@ -37,6 +38,7 @@ class NtlmFunctionsSpec extends Specification {
     where:
     provider << providers
   }
+  */
 
   @Unroll
   def "should correctly determine RC4 Encryption"() {

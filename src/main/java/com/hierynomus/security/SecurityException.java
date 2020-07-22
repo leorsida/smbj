@@ -19,4 +19,8 @@ public class SecurityException extends Exception {
     public SecurityException(Exception e) {
         super(e);
     }
+
+    public SecurityException() {
+
+    }
 }

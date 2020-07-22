@@ -257,6 +257,8 @@ public class NtlmFunctions {
     }
 
     private Cipher getDESCipher(byte[] key) {
+        throw new NtlmException(new SecurityException());
+        /*
         try {
             Cipher cipher = securityProvider.getCipher("DES/ECB/NoPadding");
             cipher.init(ENCRYPT, setupKey(key));
@@ -264,7 +266,7 @@ public class NtlmFunctions {
         } catch (SecurityException e) {
             throw new NtlmException(e);
         }
-
+        */
     }
 
     private Cipher getRC4Cipher(byte[] key) {
